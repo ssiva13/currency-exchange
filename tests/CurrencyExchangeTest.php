@@ -6,9 +6,10 @@
 
 namespace Tests;
 
+use Tests\TestCase;
 use Ssiva\CurrencyExchange\CurrencyExchangeServiceProvider;
 
-class CurrencyExchangeTest extends \Orchestra\Testbench\TestCase
+class CurrencyExchangeTest extends TestCase
 {
     public function testConvert()
     {
