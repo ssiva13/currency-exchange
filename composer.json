@@ -29,7 +29,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Ssiva\\CurrencyExchange\\Tests\\": "tests/"
+            "Tests\\": "tests/"
         }
     },
     "authors": [

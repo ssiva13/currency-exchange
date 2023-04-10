@@ -4,9 +4,9 @@
  * @author   Simon Siva <simonsiva13@gmail.com>
  */
 
-namespace Ssiva\CurrencyExchange\Tests;
+namespace Tests;
 
-use Orchestra\Testbench\TestCase;
+use Tests\TestCase;
 use Ssiva\CurrencyExchange\CurrencyExchangeServiceProvider;
 
 class CurrencyExchangeTest extends TestCase
