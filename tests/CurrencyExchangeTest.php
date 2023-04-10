@@ -6,10 +6,8 @@
 
 namespace Ssiva\CurrencyExchange\Tests;
 
-use Orchestra\Testbench\TestCase;
+use Tests\TestCase;
 use Ssiva\CurrencyExchange\CurrencyExchangeServiceProvider;
-
-use Ssiva\CurrencyExchange\Exchange\Contracts\Config;
 
 class CurrencyExchangeTest extends TestCase
 {
