@@ -55,8 +55,8 @@ class CurrencyConverterController extends Controller
         if($validator->fails()){
             return response()->json($validator->errors(), 400);
         }
-        $amount = $request->get('amount', 1);
-        $toCurrency = $request->get('currency', 'EUR');
+        $amount = $request->get('amount');
+        $toCurrency = $request->get('currency');
 
         // Fetch exchange rate from ECB daily reference
         $exchangeRate = (new Exchange())->getExchangeRate($toCurrency);

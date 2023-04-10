@@ -32,7 +32,8 @@ class Exchange
      */
     public function getExchangeRate($currency): mixed
     {
-        $source = $this->config['exchange_rate_url'];
+        $source = config('currency-exchange.exchange_rate_url');
+        $currency = $currency ?: config('currency-exchange.default_currency');
         $response = $this->client->get($source);
 
         $xml = $response->getBody()->getContents();

@@ -3,9 +3,9 @@
     "description": "Currency exchange Library",
     "type": "library",
     "require": {
-        "nesbot/carbon": "^2.66",
         "php": "^8.2",
-        "illuminate/support": "^10.6",
+        "nesbot/carbon": "^2.66",
+        "illuminate/support": "*",
         "guzzlehttp/guzzle": "^7.5",
         "spatie/array-to-xml": "^3.1",
         "ext-simplexml": "*",
