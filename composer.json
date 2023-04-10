@@ -4,8 +4,6 @@
     "type": "library",
     "require": {
         "php": "^8.2",
-        "nesbot/carbon": "^2.66",
-        "illuminate/support": "*",
         "guzzlehttp/guzzle": "^7.5",
         "spatie/array-to-xml": "^3.1",
         "ext-simplexml": "*",
@@ -29,7 +27,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Ssiva\\CurrencyExchange\\Tests\\": "tests/"
         }
     },
     "authors": [

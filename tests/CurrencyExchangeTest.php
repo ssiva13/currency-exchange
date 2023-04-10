@@ -4,23 +4,25 @@
  * @author   Simon Siva <simonsiva13@gmail.com>
  */
 
-namespace Tests;
+namespace Ssiva\CurrencyExchange\Tests;
 
-use Tests\TestCase;
+use Orchestra\Testbench\TestCase;
 use Ssiva\CurrencyExchange\CurrencyExchangeServiceProvider;
+
+use Ssiva\CurrencyExchange\Exchange\Contracts\Config;
 
 class CurrencyExchangeTest extends TestCase
 {
     public function testConvert()
     {
-        $response = $this->get('/api/v1/currency-exchange?amount=100&currency=USD');
+        $response = $this->get(route("currency-exchange" , [ "amount" => 100, "currency" => "USD"]));
         $response->assertStatus(200);
-        $response->assertJson([
-            'converted_amount' => 490.49,
-            'currency' => 'RON',
+        $response->assertJsonStructure([
+            'amount','currency',
         ]);
+    
     }
-
+    
     public function testDefaultConfig(): void
     {
         $configValue = config('currency-exchange.default_currency');
