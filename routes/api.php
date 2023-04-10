@@ -8,5 +8,5 @@
 
 use Ssiva\CurrencyExchange\Controllers\CurrencyConverterController;
 
-Route::get('currency-exchange', [CurrencyConverterController::class, 'exchange'])->name('currency-exchange');
+Route::get('v1/currency-exchange', [CurrencyConverterController::class, 'exchange'])->name('currency-exchange');
 
