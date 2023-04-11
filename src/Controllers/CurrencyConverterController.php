@@ -39,6 +39,7 @@ class CurrencyConverterController extends Controller
      *         response=200,
      *         description="Conversion result",
      *         @OA\JsonContent(
+     *             @OA\Property(property="exchange_rate", type="string", example="ISK"),
      *             @OA\Property(property="amount", type="number", example="1.23"),
      *             @OA\Property(property="currency", type="string", example="USD")
      *         )
