@@ -17,7 +17,8 @@
     "scripts": {
         "post-autoload-dump": [
             "@php vendor/bin/testbench package:discover --ansi"
-        ]
+        ],
+        "phpunit": "vendor/bin/phpunit tests"
     },
     "license": "MIT",
     "autoload": {
@@ -36,5 +37,12 @@
             "email": "simonsiva13@gmail.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Ssiva\\CurrencyExchange\\CurrencyExchangeServiceProvider"
+            ]
+        }
+    }
 }
