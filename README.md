@@ -87,7 +87,7 @@ The API will return the exchange rate for the given amount in the specified curr
 ### Testing
 
 You can run the package tests using PHPUnit. The tests are located in the **`tests`** directory.
-In you Laravel project open `dfdfgd` and add the following `testsuite` object in the `testsuites` body
+In you Laravel project open `phpunit.xml` and add the following `testsuite` object in the `testsuites` body
 
 ```xml
 <testsuite name="Currency Exchange">
