@@ -64,6 +64,8 @@ php artisan vendor:publish --tag="currency-exchange"
 ````
 This will create a currency-exchange.php file in your Laravel config directory where you can configure the package settings.
 
+To use the package, you'll need to set the CURRENCY_EXCHANGE_URL environment variable to the URL of your currency exchabnge daily reference.
+
 ### Usage
 
 To use the package, you can make a GET request to the following endpoint:
