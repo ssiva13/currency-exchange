@@ -18,7 +18,7 @@ class CurrencyConverterController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/api/currency-exchange",
+     *     path="/currency-exchange",
      *     summary="Convert currency",
      *     tags={"Currency Converter"},
      *     @OA\Parameter(
@@ -70,6 +70,7 @@ class CurrencyConverterController extends Controller
         $total = $amount * $exchangeRate;
 
         return response()->json([
+            'exchange_rate' => $exchangeRate,
             'amount' => $total,
             'currency' => $toCurrency
         ]);

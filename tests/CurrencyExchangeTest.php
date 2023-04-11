@@ -16,7 +16,7 @@ class CurrencyExchangeTest extends TestCase
         $response = $this->get(route("currency-exchange" , [ "amount" => 100, "currency" => "USD"]));
         $response->assertStatus(200);
         $response->assertJsonStructure([
-            'amount','currency',
+            'exchange_rate', 'amount', 'currency',
         ]);
     
     }
