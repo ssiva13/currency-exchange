@@ -60,7 +60,7 @@ Ssiva\CurrencyExchange\CurrencyExchangeServiceProvider::class,
 - Run the command below to publish the package config file `config/currency-exchange.php`
 
 ```bash
-php artisan vendor:publish --provider="Ssiva\\CurrencyExchange\\CurrencyExchangeServiceProvider" --tag="currency-exchange"
+php artisan vendor:publish --tag="currency-exchange"
 ````
 This will create a currency-exchange.php file in your Laravel config directory where you can configure the package settings.
 
